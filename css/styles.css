@@ -107,24 +107,34 @@ color: #2e2f42 ;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 24px;0
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+}
+
+
+
 .header-menu-link:hover {
-font-size: 12px;
-line-height: 133%;
-letter-spacing: 0.04em;
-text-decoration: underline;
-text-decoration-skip-ink: none;
 color: #404bbf;
 }
 
 .header-menu-link:focus {
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.04em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: #404bbf;   
 }
 
@@ -148,15 +158,11 @@ color: #404bbf;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    color: #434455;   
+    color: #434455; 
+    transition: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .header-address-link:hover {
-    font-size: 12px;
-    line-height: 133%;
-    letter-spacing: 0.04em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: #404bbf;  
 }
 
@@ -166,6 +172,10 @@ color: #404bbf;
 
 .hero {
     background-color:#2e2f42 ;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
 
