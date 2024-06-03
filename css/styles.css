@@ -382,6 +382,13 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+  
+.team-div-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
 
 .team-social-link:hover {
     background-color: #404bbf ;
